@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnstart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="610dp"
+            android:onClick="onClick"
+            android:text="Старт"
+            android:background="@drawable/buttons_design"
+            android:layout_weight="1"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnroutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="610dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_design"
+            android:text="Маршруты" />
+
+        <Button
+            android:id="@+id/btnstop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="610dp"
+            android:background="@drawable/buttons_design"
+            android:layout_weight="1"
+            android:text="Стоп" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>
